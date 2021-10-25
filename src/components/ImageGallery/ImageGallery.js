@@ -1,11 +1,10 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { PixabayFetch } from '../../services/pixabay';
 import { ImageGalleryItem } from './ImageGalleryItem';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
 import Loader from 'react-loader-spinner';
-import { useState } from 'react/cjs/react.development';
 
 const base_url = 'https://pixabay.com/api/';
 const api_key = '23237261-94e774dc3474a501c481a5592';
